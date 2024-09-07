@@ -1,6 +1,6 @@
 
 # BambooHR.NET
-
+*2.1.0-alpha*
 
 
 ## Clone the repository
@@ -9,11 +9,11 @@
 git clone https://github.com/moldypenguins/BambooHR.NET.git
 ```
 
-## 📄 Code of Conduct
+## Code of Conduct
 
 This project has adopted the code of conduct defined by the [Contributor Covenant](http://contributor-covenant.org/) to clarify expected behavior in our community. 
 For more information see the [Code of Conduct](CODE_OF_CONDUCT.md).
 
-## 🏆 Contributors
+## Contributors
 
 
