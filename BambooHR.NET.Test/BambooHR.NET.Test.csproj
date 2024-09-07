@@ -1,0 +1,136 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.22000.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>BambooHR.NET.Test</RootNamespace>
+    <ApplicationManifest>App.manifest</ApplicationManifest>
+    <Platforms>x86;x64;ARM64</Platforms>
+    <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
+    <PublishProfile>win-$(Platform).pubxml</PublishProfile>
+    <UseWinUI>true</UseWinUI>
+    <EnableMsixTooling>true</EnableMsixTooling>
+    <StartupObject>BambooHR.NET.Test.Program</StartupObject>
+    <SignAssembly>False</SignAssembly>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Version>1.0.0</Version>
+    <Copyright>Copyright © 2024 CR Development</Copyright>
+    <Company>CR Development</Company>
+    <Authors>Craig Roberts</Authors>
+    <Product>BambooHR.NET.Test</Product>
+    <NeutralLanguage>en-CA</NeutralLanguage>
+    <AssemblyVersion>$(Version)</AssemblyVersion>
+    <FileVersion>$(Version)</FileVersion>
+    <Title>BambooHR.NET.Test</Title>
+    <AssemblyName>BambooHR.NET.Test</AssemblyName>
+    <PackageId>BambooHR.NET.Test</PackageId>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <ApplicationIcon>Assets\BambooHR.ico</ApplicationIcon>
+    <DefaultLanguage>en-CA</DefaultLanguage>
+    <SupportedOSPlatformVersion>10.0.22000.0</SupportedOSPlatformVersion>
+    <PackageCertificateThumbprint>2DF9D0157F6357B6A01770B371145DFCE1F03C90</PackageCertificateThumbprint>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+    <PackageCertificateKeyFile>BambooHR.NET.Test_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="Assets\BambooHR.NET.altform-lightunplated_targetsize-16.png" />
+    <Content Remove="Assets\BambooHR.NET.altform-lightunplated_targetsize-24.png" />
+    <Content Remove="Assets\BambooHR.NET.altform-lightunplated_targetsize-256.png" />
+    <Content Remove="Assets\BambooHR.NET.altform-lightunplated_targetsize-32.png" />
+    <Content Remove="Assets\BambooHR.NET.altform-lightunplated_targetsize-48.png" />
+    <Content Remove="Assets\BambooHR.NET.altform-unplated_targetsize-16.png" />
+    <Content Remove="Assets\BambooHR.NET.altform-unplated_targetsize-24.png" />
+    <Content Remove="Assets\BambooHR.NET.altform-unplated_targetsize-256.png" />
+    <Content Remove="Assets\BambooHR.NET.altform-unplated_targetsize-32.png" />
+    <Content Remove="Assets\BambooHR.NET.altform-unplated_targetsize-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\BambooHR.NET.scale-100.png" />
+    <None Remove="Assets\BambooHR.NET.scale-125.png" />
+    <None Remove="Assets\BambooHR.NET.scale-150.png" />
+    <None Remove="Assets\BambooHR.NET.scale-200.png" />
+    <None Remove="Assets\BambooHR.NET.scale-400.png" />
+    <None Remove="Assets\BambooHR.NET.targetsize-16.png" />
+    <None Remove="Assets\BambooHR.NET.targetsize-16_altform-unplated.png" />
+    <None Remove="Assets\BambooHR.NET.targetsize-24.png" />
+    <None Remove="Assets\BambooHR.NET.targetsize-24_altform-lightunplated.png" />
+    <None Remove="Assets\BambooHR.NET.targetsize-256.png" />
+    <None Remove="Assets\BambooHR.NET.targetsize-256_altform-lightunplated.png" />
+    <None Remove="Assets\BambooHR.NET.targetsize-256_altform-unplated.png" />
+    <None Remove="Assets\BambooHR.NET.targetsize-32.png" />
+    <None Remove="Assets\BambooHR.NET.targetsize-32_altform-lightunplated.png" />
+    <None Remove="Assets\BambooHR.NET.targetsize-32_altform-unplated.png" />
+    <None Remove="Assets\BambooHR.NET.targetsize-48.png" />
+    <None Remove="Assets\BambooHR.NET.targetsize-48_altform-unplated.png" />
+    <None Remove="MainPage.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+    <PackageReference Include="WinUIEx" Version="2.3.4" />
+    <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup>
+
+  <!-- 
+    Defining the "Msix" ProjectCapability here allows the Single-project MSIX Packaging
+    Tools extension to be activated for this project even if the Windows App SDK Nuget
+    package has not yet been restored.
+  -->
+  <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+    <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BambooHR.NET\BambooHR.NET.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <!-- 
+    Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution 
+    Explorer "Package and Publish" context menu entry to be enabled for this project even if 
+    the Windows App SDK Nuget package has not yet been restored.
+  -->
+  <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+    <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <DebugType>none</DebugType>
+    <IsPublishable>False</IsPublishable>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebugType>none</DebugType>
+    <IsPublishable>False</IsPublishable>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <DebugType>none</DebugType>
+    <IsPublishable>False</IsPublishable>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <IsPublishable>False</IsPublishable>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IsPublishable>False</IsPublishable>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <IsPublishable>False</IsPublishable>
+  </PropertyGroup>
+</Project>

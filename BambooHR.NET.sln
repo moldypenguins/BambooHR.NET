@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BambooHR.NET", "BambooHR.NET\BambooHR.NET.csproj", "{A78319EB-8EB2-4080-8990-D4DABD2230DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EB1553F1-A7AE-46D9-BE55-A5197EA3BEA1}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.vsconfig = .vsconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BambooHR.NET.Test", "BambooHR.NET.Test\BambooHR.NET.Test.csproj", "{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Debug|x64.Build.0 = Debug|Any CPU
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Debug|x86.Build.0 = Debug|Any CPU
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Release|ARM64.Build.0 = Release|Any CPU
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Release|x64.ActiveCfg = Release|Any CPU
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Release|x64.Build.0 = Release|Any CPU
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Release|x86.ActiveCfg = Release|Any CPU
+		{A78319EB-8EB2-4080-8990-D4DABD2230DE}.Release|x86.Build.0 = Release|Any CPU
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Debug|Any CPU.Build.0 = Debug|x64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Debug|Any CPU.Deploy.0 = Debug|x64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Debug|ARM64.Build.0 = Debug|ARM64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Debug|x64.ActiveCfg = Debug|x64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Debug|x64.Build.0 = Debug|x64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Debug|x64.Deploy.0 = Debug|x64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Debug|x86.ActiveCfg = Debug|x86
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Debug|x86.Build.0 = Debug|x86
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Debug|x86.Deploy.0 = Debug|x86
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Release|Any CPU.ActiveCfg = Release|x64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Release|Any CPU.Build.0 = Release|x64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Release|Any CPU.Deploy.0 = Release|x64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Release|ARM64.ActiveCfg = Release|ARM64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Release|ARM64.Build.0 = Release|ARM64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Release|ARM64.Deploy.0 = Release|ARM64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Release|x64.ActiveCfg = Release|x64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Release|x64.Build.0 = Release|x64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Release|x64.Deploy.0 = Release|x64
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Release|x86.ActiveCfg = Release|x86
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Release|x86.Build.0 = Release|x86
+		{2FF2BF1F-A87C-4032-ACCF-06D43D54615E}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30462583-557C-4BE8-A62E-29A0E6E2DD45}
+	EndGlobalSection
+EndGlobal

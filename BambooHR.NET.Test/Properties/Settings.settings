@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BambooHR.NET.Test.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="API_KEY" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Y0Ur_B@mB00HR_AP!_K3Y</Value>
+    </Setting>
+    <Setting Name="COMPANY_SUBDOMAIN" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">companysubdomain</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BambooHR.NET.Test (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "BambooHR.NET.Test (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
