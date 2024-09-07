@@ -1,6 +1,6 @@
 
 # BambooHR.NET
-*2.1.0-alpha*
+*2.1.0-alpha*  
 ![License](https://img.shields.io/github/license/moldypenguins/BambooHR.NET)
 ![Open Issues](https://img.shields.io/github/issues/moldypenguins/BambooHR.NET)
 ![Open Pull Requests](https://img.shields.io/github/issues-pr/moldypenguins/BambooHR.NET)
